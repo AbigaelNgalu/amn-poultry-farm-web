@@ -1,0 +1,10 @@
+function Footer() {
+  return (
+    <div className="absolute w-[1440px] h-[513px] left-0 top-[4944px]">
+      {/* Footer content goes here */}
+    </div>
+  );
+}
+
+
+
