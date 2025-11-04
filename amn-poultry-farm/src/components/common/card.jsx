@@ -1,11 +1,24 @@
 import React from "react";
 
-const Card = ({ img, name, price }) => (
-  <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-4 text-center">
-    <img src={img} alt={name} className="rounded-xl mb-4 h-40 w-full object-cover" />
-    <h3 className="font-semibold text-lg">{name}</h3>
-    <p className="text-sm text-gray-500">{price}</p>
-  </div>
-);
+const Card = ({ image, title, description, price, onClick }) => {
+  return (
+    <div
+      onClick={onClick}
+      className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+    >
+      <img
+        src={image}
+        alt={title}
+        loading="lazy"
+        className="h-56 w-full object-cover"
+      />
+      <div className="p-4">
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
+        <p className="text-sm text-gray-600 mb-3">{description}</p>
+        <p className="text-primary font-bold">{price}</p>
+      </div>
+    </div>
+  );
+};
 
 export default Card;

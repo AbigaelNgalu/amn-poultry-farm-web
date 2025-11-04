@@ -11,13 +11,13 @@ const TestimonialsSection = () => (
           <p className="italic text-gray-700 mb-4">
             “Best poultry products I’ve ever bought! Always fresh and affordable.”
           </p>
-          <h4 className="font-semibold">— Sarah N., Restaurant Owner</h4>
+          <h4 className="font-semibold">— Sarah Neema., Restaurant Owner</h4>
         </div>
         <div className="bg-white p-6 rounded-2xl shadow transition hover:scale-105 duration-300">
           <p className="italic text-gray-700 mb-4">
             “Their organic eggs taste amazing and delivery is always on time.”
           </p>
-          <h4 className="font-semibold">— Daniel M., Customer</h4>
+          <h4 className="font-semibold">— Daniel Muoki., Customer</h4>
         </div>
       </div>
     </div>
