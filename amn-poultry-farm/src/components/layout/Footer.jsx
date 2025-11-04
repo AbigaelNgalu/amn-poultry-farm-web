@@ -18,13 +18,13 @@ const Footer = () => (
       </div>
       <div>
         <h4 className="font-semibold text-white mb-3">Contact</h4>
-        <p>📍 123 Farm Road, Greenfield</p>
-        <p>📞 +123 456 7890</p>
+        <p>📍 Mashambani Road, AMN POUTRY FARM</p>
+        <p>📞 +254 77777</p>
         <p>✉️ support@farmfresh.com</p>
       </div>
       <div className="md:text-right">
         <p className="opacity-80 text-sm">
-          © 2025 FarmFresh Poultry. All rights reserved.
+          © 2025 AMN Poultry. All rights reserved.
         </p>
       </div>
     </div>
