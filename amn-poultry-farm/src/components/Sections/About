@@ -1,0 +1,24 @@
+import React from "react";
+import farmImg from "../../assets/images/about-farm.jpg";
+import { Button } from "../ui/Button";
+
+const AboutSection = () => (
+  <section
+    id="about"
+    className="container mx-auto px-6 py-16 md:py-20 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+  >
+    <img src={farmImg} alt="About farm" className="rounded-2xl shadow-lg" />
+    <div className="text-center md:text-left">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+        We Care For Our Poultry
+      </h2>
+      <p className="text-gray-700 mb-6 leading-relaxed text-base md:text-lg">
+        Our farm ensures healthy and organic growth using natural feed and
+        sustainable practices. Every chicken and egg is raised with care.
+      </p>
+      <Button variant="primary">Learn More</Button>
+    </div>
+  </section>
+);
+
+export default AboutSection;
