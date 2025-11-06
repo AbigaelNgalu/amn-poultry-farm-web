@@ -3,11 +3,37 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+ "scripts": {
+  "dev": "vite",
+  "build": "tsc -b && vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+}
+  ,"eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "react",
+      "react-hooks",
+      "@typescript-eslint"
+    ],
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "dependencies": {
     "react": "^19.1.1",
