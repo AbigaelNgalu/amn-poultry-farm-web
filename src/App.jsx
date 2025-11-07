@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/layout/Navbar.jsx";
 import Footer from "./components/layout/Footer.jsx";
 import HeroSection from "./components/Sections/Hero.jsx";
-import StatsSection from "./components/Sections/stats.jsx";
+import statsSection from "./components/Sections/stats.jsx";
 import AboutSection from "./components/Sections/About";
 import ProductShowcase from "./components/Sections/Productshowcase";
 import NewsletterSection from "./components/Sections/Newsletter";
