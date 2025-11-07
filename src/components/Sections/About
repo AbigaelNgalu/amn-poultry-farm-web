@@ -1,6 +1,5 @@
 import React from "react";
 import farmImg from "../../assets/images/about-farm.jpg";
-import { Button } from "../ui/Button";
 
 const AboutSection = () => (
   <section
@@ -16,7 +15,13 @@ const AboutSection = () => (
         Our farm ensures healthy and organic growth using natural feed and
         sustainable practices. Every chicken and egg is raised with care.
       </p>
-      <Button variant="primary">Learn More</Button>
+      {/* Removed <Button> since ui/Button.jsx doesn't exist */}
+      <a
+        href="#contact"
+        className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-all"
+      >
+        Learn More
+      </a>
     </div>
   </section>
 );
