@@ -1,28 +1,43 @@
 import React from "react";
-import Navbar from "./components/layout/Navbar.jsx";
-import Footer from "./components/layout/Footer.jsx";
-import HeroSection from "./components/Sections/Hero.jsx";
-import statsSection from "./components/Sections/stats.jsx";
-import AboutSection from "./components/Sections/About";
-import ProductShowcase from "./components/Sections/Productshowcase";
-import NewsletterSection from "./components/Sections/Newsletter";
-import TestimonialsSection from "./components/Sections/Testimonials";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+
+// Sections
+import Hero from "./components/Sections/Hero";
+import About from "./components/Sections/About";
+import Newsletter from "./components/Sections/Newsletter";
+import Stats from "./components/Sections/stats";
+import Testimonial from "./components/Sections/Testimonial";
+
+// Common Components (optional imports if used inside sections)
+import Modal from "./components/common/Modal";
+import Button from "./components/common/Button";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen font-sans bg-gray-50 text-gray-900">
+    <div className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+      {/* Navbar */}
       <Navbar />
+
+      {/* Main Content */}
       <main className="flex-grow">
-        <HeroSection />
-        <StatsSection />
-        <AboutSection />
-        <ProductShowcase />
-        <TestimonialsSection />
-        <NewsletterSection />
+        <Hero />
+        <About />
+        <Stats />
+        <Testimonial />
+        <Newsletter />
       </main>
+
+      {/* Footer */}
       <Footer />
+
+      {/* Global Modal example (optional) */}
+      {/* <Modal /> */}
     </div>
   );
 }
 
 export default App;
+
