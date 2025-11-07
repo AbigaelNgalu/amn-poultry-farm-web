@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./components/layout/Navbar.jsx";
 import Footer from "./components/layout/Footer.jsx";
-import HeroSection from "./components/sections/Hero.jsx";
-import StatsSection from "./components/sections/Stats.jsx";
-import AboutSection from "./components/sections/JS About";
-import ProductShowcase from "./components/sections/ProductShowcase";
-import TestimonialsSection from "./components/sections/Testimonials";
-import NewsletterSection from "./components/sections/Newsletter";
+import HeroSection from "./components/Sections/Hero.jsx";
+import StatsSection from "./components/Sections/stats.jsx";
+import AboutSection from "./components/Sections/About";
+import ProductShowcase from "./components/Sections/Productshowcase";
+import NewsletterSection from "./components/Sections/Newsletter";
+import TestimonialsSection from "./components/Sections/Testimonials";
 
 function App() {
   return (
