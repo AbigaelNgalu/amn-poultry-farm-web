@@ -9,9 +9,12 @@ import Newsletter from "./components/Sections/Newsletter";
 import Stats from "./components/Sections/stats";
 import Testimonial from "./components/Sections/Testimonial";
 
+
 // Common Components (optional imports if used inside sections)
+ import Button from "./components/common/Button";
+import card from "./components/common/card";
 import Modal from "./components/common/Modal";
-import Button from "./components/common/Button";
+import clsx from "src/components/common/Button.jsx";
 
 import "./App.css";
 
