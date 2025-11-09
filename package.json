@@ -15,11 +15,9 @@
       "plugin:react/recommended",
       "plugin:react-hooks/recommended"
     ],
-    "parser": "@typescript-eslint/parser",
     "plugins": [
       "react",
-      "react-hooks",
-      "@typescript-eslint"
+      "react-hooks"
     ],
     "env": {
       "browser": true,
@@ -36,19 +34,18 @@
     }
   },
   "dependencies": {
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
-    
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "vite": "^7.2.1",
-    "typescript": "^5.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.0.0"
-   
+    "eslint": "^8.0.0",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
   }
 }
+
 
 
    

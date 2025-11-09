@@ -11,10 +11,10 @@ import Testimonial from "./components/Sections/Testimonial";
 
 
 // Common Components (optional imports if used inside sections)
- import Button from "./components/common/Button";
-import card from "./components/common/card";
 import Modal from "./components/common/Modal";
-import clsx from "src/components/common/Button.jsx";
+import Button from "./components/common/Button";
+import Card from "./components/common/Card";
+import iu from "./components/common/ui";
 
 import "./App.css";
 
