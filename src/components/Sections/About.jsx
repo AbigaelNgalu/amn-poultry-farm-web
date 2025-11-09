@@ -1,5 +1,5 @@
 import React from "react";
-import farmImg from "../../assets/images/about-farm.jpg";
+import farmImg from "../../scr/data/breedsData/images/farm.jpg";
 
 const AboutSection = () => (
   <section

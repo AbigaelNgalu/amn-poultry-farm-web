@@ -13,7 +13,13 @@ const HeroSection = () => {
           Fresh & Healthy Poultry Products
         </h1>
         <p className="max-w-2xl mx-auto mb-8 text-base md:text-lg opacity-90">
-          From our farm to your table — organic eggs, fresh chicken, and premium feeds.
+         var _s = $RefreshSig$();
+     import React, { useState } from "react";
+     import Card from "../common/Card";
+                    ^
+      import { breedsData } from "../../data/breedsData";
+      const ProductShowcase = () `{'}'}`
+         From our farm to your table — organic eggs, fresh chicken, and premium feeds.
         </p>
         <div className="flex flex-col md:flex-row justify-center gap-4">
           <Button variant="primary">Shop Now</Button>

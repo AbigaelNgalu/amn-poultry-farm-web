@@ -6,14 +6,18 @@ const ProductShowcase = () => {
   const [selectedBreed, setSelectedBreed] = useState(null);
 
   return (
-    <section id="products" className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <section
+      id="products"
+      className="container mx-auto py-16 px-4 sm:px-6 lg:px-8"
+    >
       {/* Section Title */}
       <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-2">
           Our Poultry Breeds
         </h2>
         <p className="text-gray-600 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
-          Choose from our premium selection of layer, broiler, and dual-purpose chicks.
+          Choose from our premium selection of layer, broiler, and dual-purpose
+          chicks.
         </p>
       </div>
 
@@ -58,11 +62,19 @@ const ProductShowcase = () => {
 
               {/* Info */}
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-primary mb-1">{selectedBreed.name}</h3>
-                <p className="text-sm text-gray-500 italic mb-3">{selectedBreed.type}</p>
-                <p className="text-gray-700 mb-4">{selectedBreed.description}</p>
+                <h3 className="text-2xl font-bold text-primary mb-1">
+                  {selectedBreed.name}
+                </h3>
+                <p className="text-sm text-gray-500 italic mb-3">
+                  {selectedBreed.type}
+                </p>
+                <p className="text-gray-700 mb-4">
+                  {selectedBreed.description}
+                </p>
 
-                <h4 className="font-semibold text-lg mb-2 text-primary">Age & Price</h4>
+                <h4 className="font-semibold text-lg mb-2 text-primary">
+                  Age & Price
+                </h4>
                 <ul className="space-y-1 mb-4">
                   {selectedBreed.ages.map((age, index) => (
                     <li
@@ -88,3 +100,4 @@ const ProductShowcase = () => {
 };
 
 export default ProductShowcase;
+
