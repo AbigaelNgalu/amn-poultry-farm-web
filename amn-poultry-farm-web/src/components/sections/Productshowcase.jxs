@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import breedsData from "../../assets/data/breedsData";
 import { breedsArrayPropType } from "../../propTypes/breeds";
 
-const ProductShowcase = ({ items = breedsData }) => (
+const Productshowcase = ({ items = breedsData }) => (
   <section className="py-16 bg-gray-50">
     <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
       {items.map((breed) => (
@@ -24,8 +24,8 @@ const ProductShowcase = ({ items = breedsData }) => (
   </section>
 );
 
-ProductShowcase.propTypes = {
+Productshowcase.propTypes = {
   items: breedsArrayPropType,
 };
 
-export default ProductShowcase;
+export default Productshowcase;

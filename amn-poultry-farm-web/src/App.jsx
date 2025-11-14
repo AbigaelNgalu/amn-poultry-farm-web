@@ -3,7 +3,7 @@ import Navigation from "./components/layout/Navigation";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Features from "./components/sections/Features";
-import productshowcase from "./components/sections/productshowcase";
+import Productshowcase from "./components/sections/Productshowcase";
 import Newsletter from "./components/sections/Newsletter";
 
 function App() {
@@ -27,9 +27,9 @@ function App() {
           <Features />
         </section>
 
-        {/* Product Showcase / Breeds */}
+        {/* Productshowcase / Breeds */}
         <section id="breeds" className="py-16 bg-gray-100">
-          <ProductShowcase />
+          <Productshowcase />
         </section>
 
         {/* Newsletter */}
