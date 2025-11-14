@@ -5,7 +5,8 @@ import Footer from "./components/layout/Footer";
 import Features from "./components/sections/Features";
 import ProductShowcase from "./components/sections/ProductShowcase";
 import Newsletter from "./components/sections/Newsletter";
- function App() {
+
+function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
       {/* Navigation */}
@@ -44,3 +45,4 @@ import Newsletter from "./components/sections/Newsletter";
 }
 
 export default App;
+
