@@ -3,7 +3,7 @@ import Navigation from "./components/layout/Navigation";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Features from "./components/sections/Features";
-import Productshowcase from "./components/sections/Productshowcase";
+import productshowcase from "./components/sections/productshowcase";
 import Newsletter from "./components/sections/Newsletter";
 
 function App() {
