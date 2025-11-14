@@ -2,11 +2,10 @@ import React from "react";
 import Navigation from "./components/layout/Navigation";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import Features from "./components/sections/Features";
+import Footer from "./components/layout/Footer";  import Features from "./components/sections/Features";
 import ProductShowcase from "./components/sections/ProductShowcase";
 import Newsletter from "./components/sections/Newsletter";
-
-function App() {
+ function App() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
       {/* Navigation */}
