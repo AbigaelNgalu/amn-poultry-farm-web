@@ -1,3 +1,4 @@
+import React from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const features = [
@@ -23,18 +24,21 @@ const features = [
   },
 ];
 
-const Feature = () => {
+const Features = () => {
   return (
     <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-4">Why Choose Us</h2>
+      <div className="max-w-7xl mx-auto px-6 text-center">
+        <h2 className="text-4xl font-bold mb-4">Why Choose Us</h2>
         <p className="text-gray-600 mb-12">
-          We provide top-notch services to ensure your pet experience is amazing.
+          We provide top-notch services to ensure your poultry experience is amazing.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
-            <div key={feature.id} className="flex flex-col items-center text-center">
+            <div
+              key={feature.id}
+              className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-lg transition"
+            >
               <CheckCircleIcon className="h-12 w-12 text-indigo-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-600 text-sm">{feature.description}</p>
@@ -46,4 +50,5 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default Features;
+

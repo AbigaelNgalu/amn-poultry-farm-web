@@ -1,26 +1,28 @@
 import React from "react";
 
-const testimonials = [
-	{ id: 1, quote: "Best hens I've ever had — healthy and productive.", author: "— A. Farmer" },
-	{ id: 2, quote: "Great customer service and fast delivery.", author: "— B. Rancher" },
-];
+export default function Testimonials() {
+  const testimonials = [
+    { name: "Fatuma", quote: "Best poultry products I’ve ever bought!" },
+    { name: "James", quote: "Fresh and high quality every time." },
+    { name: "Brenda", quote: "Fast delivery and excellent customer service." },
+  ];
 
-const Testimonials = () => {
-	return (
-		<section className="py-16 bg-white">
-			<div className="max-w-4xl mx-auto px-6 text-center">
-				<h2 className="text-3xl font-bold mb-8">What our customers say</h2>
-				<div className="space-y-6">
-					{testimonials.map((t) => (
-						<blockquote key={t.id} className="text-gray-700">
-							<p className="italic">"{t.quote}"</p>
-							<cite className="block mt-2 text-sm text-gray-500">{t.author}</cite>
-						</blockquote>
-					))}
-				</div>
-			</div>
-		</section>
-	);
-};
-
-export default Testimonials;
+  return (
+    <section className="py-16 bg-gray-100">
+      <div className="max-w-7xl mx-auto px-6 text-center">
+        <h2 className="text-4xl font-bold mb-12">What Our Customers Say</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.map((t, idx) => (
+            <div
+              key={idx}
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+            >
+              <p className="text-gray-700 mb-4">"{t.quote}"</p>
+              <p className="font-semibold">{t.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,10 +1,12 @@
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-export default function Button({ children, variant = 'primary', className = '', ...props }) {
-  const base = 'inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium focus:outline-none focus:ring';
+export default function Button({ children, variant = "primary", className = "", ...props }) {
+  const base = "inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium focus:outline-none focus:ring";
   const variants = {
-    primary: `${base} bg-primary text-white hover:opacity-95 focus:ring-primary/30`,
+    primary: `${base} bg-blue-600 text-white hover:bg-blue-500 focus:ring-blue-300`,
     secondary: `${base} bg-gray-200 text-gray-800 hover:bg-gray-300`,
+    accent: `${base} bg-yellow-400 text-gray-900 hover:bg-yellow-300`,
   };
 
   return (
@@ -16,6 +18,6 @@ export default function Button({ children, variant = 'primary', className = '', 
 
 Button.propTypes = {
   children: PropTypes.node,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'outline']),
+  variant: PropTypes.oneOf(["primary", "secondary", "accent"]),
   className: PropTypes.string,
 };

@@ -1,3 +1,5 @@
+import React from "react";
+
 const Card = ({ image, title, description, price, onClick }) => {
   return (
     <div
@@ -10,10 +12,10 @@ const Card = ({ image, title, description, price, onClick }) => {
         loading="lazy"
         className="h-56 w-full object-cover"
       />
-      <div className="p-4">
+      <div className="p-6">
         <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
         <p className="text-sm text-gray-600 mb-3">{description}</p>
-        <p className="text-primary font-bold">{price}</p>
+        <p className="text-blue-600 font-bold text-lg">{price}</p>
       </div>
     </div>
   );
