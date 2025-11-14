@@ -1,8 +1,8 @@
-import React from "react";
-import { CheckCircleIcon } from "@heroicons/react/24/solid";
-
-const features = [
-  {
+import { jsxDEV } from "react/jsx-dev-runtime";
+ import React from "react";
+  import { CheckCircleIcon } from "@heroicons/react/24/solid";
+  const features = [
+   {
     id: 1,
     title: "Certified Breeders",
     description: "All breeders meet strict health and safety standards.",
